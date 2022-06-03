@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            color: aqua;
+            border: 2px solid black;
+        }
+
+        .extra-sale {
+            border: 4px solid yellow;
+        }
+
+        .base {
+            border: 4px dotted brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- Подключение CSS к документу. 4 способа:
+        1 способ. inline-style (линейный)
+        Не рекомендуемый способ. 
+        По причине невозможности реиспользования и большого количества css в разметке
+        Из плюсов: Имеет самый высокий приоритет
+        <p style="font-size: 3em; color: red;">
+
+        2 способ. тег <head><style>....</style></head>
+        Имеет приоритет средний
+        Не рекомендуемый способ. Из-за увеличения веса страницы.
+        Примечание: можно исп. в учебных проектах, но не в продакшене
+
+        3 способ. Через @import.
+        Приоритет ниже среднего.
+        Исп. редко, а если и нужен, то для подключения внешних ресурсов (внешний css файл)
+     
+        4 способ. Тег <link></link>.
+        Самый низкий приоритет
+        Позволяет подключить(внешний и внутренний) css документ к html через атрибут.     
+    -->
+    <!-- <div style="background-color: gold; height: 600px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eum ullam illum vel adipisci neque dolore placeat debitis ducimus inventore excepturi tenetur suscipit, omnis animi voluptatum nam accusantium officiis. Repellendus, debitis a. Molestiae tenetur itaque et animi earum cupiditate neque aspernatur repellendus illo soluta perferendis harum vero quam praesentium nobis vitae, iure quae facilis tempora cumque. Odio iste cumque ratione!</div> -->
+    <p style="font-size: 3em; color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, unde?</p>
+    <p class="base extra-sale">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, accusamus?</p>
+
+    <i>Lorem ipsum dolor sit amet.</i>
+    <hr>
+    <em>Lorem ipsum dolor sit amet.</em>
+    <hr>
+    <span class="italic">Lorem ipsum dolor sit amet.</span>
+    <br>
+    <br>
+    <br>
+    <b>Lorem ipsum dolor sit amet.</b>
+    <hr>
+    <strong>Lorem ipsum dolor sit amet.</strong>
+    <hr>
+    <span class="bold">Lorem ipsum dolor sit amet.</span>
+    <hr>
+    <p>Lorem <u><b><i>ipsum dolor</i></b></u> sit amet.</p>
+    <p>Lorem ipsum <del>dolor</del> sit amet.</p>
+
+
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Impedit, maxime animi.</li>
+        <li>Ullam, ratione aliquid.</li>
+        <li>Rem, animi quia.</li>
+        <li>Quos, adipisci blanditiis.</li>
+        <li>Ab, quo aliquam?</li>
+    </ul>
+
+    <ol>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Odit, esse non!</li>
+        <li>Alias, reprehenderit vero?</li>
+        <li>Ab, similique optio?</li>
+        <li>Nam, neque dolorum!</li>
+    </ol>
+
+    <div class="img-container">
+        <h2>Картинка</h2>
+        <a href="">
+            <img 
+            src="https://play-lh.googleusercontent.com/MmLHNN4_lwIN7kMG7XWnOxSYbEju-FBMEn8oDj4Xt8t9EnnH6S6GQeMHJDWpGfeDOSpM" 
+            alt="мордочка">
+        </a>
+    </div>
+</body>
+
+</html>
